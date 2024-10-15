@@ -7,7 +7,6 @@ const { job } = defineProps({
 })
 
 const { title, location, salary, type, id } = job
-console.log('🚀 ~ id:', id)
 
 const DESCRIPTION_MAX_LENGTH = 90
 
