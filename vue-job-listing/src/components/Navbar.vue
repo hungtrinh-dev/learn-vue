@@ -1,7 +1,16 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
 import logo from '@/assets/img/logo.png'
-import { RouterLink } from 'vue-router'
+import { routes } from '@/router'
+import { RouterLink, useRoute } from 'vue-router'
+
+const route = useRoute()
+
+const isActiveLink = (routePath) => {
+  return route.path === routePath
+}
+
+const navbarRoutes = routes.filter((r) => r.isNavbar)
 </script>
 
 <template>
@@ -17,20 +26,20 @@ import { RouterLink } from 'vue-router'
           <div class="md:ml-auto">
             <div class="flex space-x-2">
               <RouterLink
-                to="/"
-                class="text-white bg-green-900 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                >Home
+                v-for="route in navbarRoutes"
+                :key="route.name"
+                :to="route.path"
+                :class="[
+                  isActiveLink(`${route.path}`)
+                    ? 'bg-green-900'
+                    : 'hover:bg-gray-900 hover:text-white',
+                  'text-white',
+                  'px-3',
+                  'py-2',
+                  'rounded-md'
+                ]"
+                >{{ route.name }}
               </RouterLink>
-              <RouterLink
-                to="/jobs"
-                class="text-white hover:bg-green-900 hover:text-white rounded-md px-3 py-2"
-                >Jobs
-              </RouterLink>
-              <a
-                href="add-job.html"
-                class="text-white hover:bg-green-900 hover:text-white rounded-md px-3 py-2"
-                >Add Job</a
-              >
             </div>
           </div>
         </div>
