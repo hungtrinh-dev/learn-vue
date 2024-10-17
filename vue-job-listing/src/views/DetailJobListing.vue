@@ -1,9 +1,10 @@
 <script setup>
-import BackToJobListings from '@/components/BackToJobListings.vue'
-import PulseLoader from '@/components/PulseLoader.vue'
-import axios from 'axios'
 import { onMounted, reactive } from 'vue'
 import { useRoute } from 'vue-router'
+
+import JobAPI from '@/api/jobAPI'
+import BackToJobListings from '@/components/BackToJobListings.vue'
+import PulseLoader from '@/components/PulseLoader.vue'
 
 const state = reactive({
   job: {},
@@ -18,9 +19,7 @@ onMounted(async () => {
   state.fetchJobError = null
   state.fetchJobInProgress = true
   try {
-    const apiResponse = await axios.get(
-      `https://670cfb81073307b4ee41daa8.mockapi.io/api/v1/jobs/${jobId}`
-    )
+    const apiResponse = await JobAPI.getJobListingById(jobId)
     state.job = apiResponse.data
   } catch (error) {
     console.error('Fetch job detail fail:', error)
