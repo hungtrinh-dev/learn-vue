@@ -2,6 +2,7 @@
 import { defineProps } from 'vue'
 import JobListingCard from './JobListingCard.vue'
 import PulseLoader from './PulseLoader.vue'
+import GeneralLayout from '@/layouts/GeneralLayout.vue'
 
 const { limit, shouldVisibleShowMoreButton, jobs, fetchJobListingInProgress } = defineProps({
   limit: Number,
@@ -25,7 +26,7 @@ const { limit, shouldVisibleShowMoreButton, jobs, fetchJobListingInProgress } = 
 </script>
 
 <template>
-  <section class="bg-green-50 px-4 py-10">
+  <GeneralLayout>
     <div class="container-xl lg:container m-auto">
       <h2 class="text-3xl font-bold text-green-500 mb-6 text-center">Browse Jobs</h2>
       <div v-if="fetchJobListingInProgress" class="text-center py-6 text-gray">
@@ -46,7 +47,7 @@ const { limit, shouldVisibleShowMoreButton, jobs, fetchJobListingInProgress } = 
         >View All Jobs
       </RouterLink>
     </div>
-  </section>
+  </GeneralLayout>
 </template>
 
 <script setup></script>

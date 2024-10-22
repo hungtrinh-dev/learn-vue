@@ -16,9 +16,14 @@ const getJobListingById = (id) => {
   return api.get(`/jobs/${id}`)
 }
 
+const createNewJobListing = (listing) => {
+  return api.post('/jobs', listing)
+}
+
 const JobAPI = {
   queryJobListings,
-  getJobListingById
+  getJobListingById,
+  createNewJobListing
 }
 
 export default JobAPI
