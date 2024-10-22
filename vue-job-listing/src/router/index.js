@@ -3,6 +3,7 @@ import HomeView from '@/views/HomeView.vue'
 import JobListingsView from '@/views/JobListingsView.vue'
 import DetailJobListing from '@/views/DetailJobListing.vue'
 import AddJobView from '@/views/AddJobView.vue'
+import TodosView from '@/views/TodosView/TodosView.vue'
 
 export const routes = [
   {
@@ -27,6 +28,12 @@ export const routes = [
     path: '/jobs/create-new-listing',
     name: 'Add Job',
     component: AddJobView,
+    isNavbar: true
+  },
+  {
+    path: '/todos',
+    name: 'Todos',
+    component: TodosView,
     isNavbar: true
   }
 ]
