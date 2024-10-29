@@ -40,7 +40,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import { Container, Draggable } from 'vue3-smooth-dnd'
 
 import { applyDrag, generateItems, generateWords } from '@/utils/helpers'
@@ -96,6 +96,10 @@ const onCardDrop = (columnId, dropResult) => {
 const getCardPayload = (columnId) => {
   return (index) => scene.value.children.find((p) => p.id === columnId).children[index]
 }
+
+onMounted(() => {
+  console.log('🚀 ~ scene:', scene.value)
+})
 </script>
 
 <!-- Styles -->
