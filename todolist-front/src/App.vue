@@ -1,5 +1,5 @@
 <template>
-  <n-config-provider :locale="zhCN" :date-locale="dateZhCN">
+  <n-config-provider :locale="" :date-locale="dateZhCN">
     <n-loading-bar-provider>
       <n-message-provider>
         <DndProvider :backend="HTML5Backend">

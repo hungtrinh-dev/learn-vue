@@ -431,6 +431,26 @@
   resolved "https://registry.npmjs.org/@eslint/js/-/js-8.57.1.tgz"
   integrity sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==
 
+"@floating-ui/core@^1.6.0":
+  version "1.6.8"
+  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.6.8.tgz#aa43561be075815879305965020f492cdb43da12"
+  integrity sha512-7XJ9cPU+yI2QeLS+FCSlqNFZJq8arvswefkZrYI1yQBbftw6FyrZOxYSh+9S7z7TpeWlRt9zJ5IhM1WIL334jA==
+  dependencies:
+    "@floating-ui/utils" "^0.2.8"
+
+"@floating-ui/dom@^1.5.3":
+  version "1.6.12"
+  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.6.12.tgz#6333dcb5a8ead3b2bf82f33d6bc410e95f54e556"
+  integrity sha512-NP83c0HjokcGVEMeoStg317VD9W7eDlGK7457dMBANbKA6GJZdc7rjujdgqzTaz93jkGgc5P/jeWbaCHnMNc+w==
+  dependencies:
+    "@floating-ui/core" "^1.6.0"
+    "@floating-ui/utils" "^0.2.8"
+
+"@floating-ui/utils@^0.2.8":
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.2.8.tgz#21a907684723bbbaa5f0974cf7730bd797eb8e62"
+  integrity sha512-kym7SodPp8/wloecOpcmSnWJsK7M0E5Wg8UcFA+uO4B9s5d0ywXOEro/8HM9x0rW+TljRzul/14UYz3TleT3ig==
+
 "@humanwhocodes/config-array@^0.13.0":
   version "0.13.0"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.13.0.tgz"
@@ -449,6 +469,11 @@
   version "2.0.3"
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-2.0.3.tgz"
   integrity sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==
+
+"@interactjs/types@1.10.27":
+  version "1.10.27"
+  resolved "https://registry.yarnpkg.com/@interactjs/types/-/types-1.10.27.tgz#10afd71cef2498e2b5192cf0d46f937d8ceb767f"
+  integrity sha512-BUdv0cvs4H5ODuwft2Xp4eL8Vmi3LcihK42z0Ft/FbVJZoRioBsxH+LlsBdK4tAie7PqlKGy+1oyOncu1nQ6eA==
 
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
@@ -493,6 +518,11 @@
   dependencies:
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
+
+"@juggle/resize-observer@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@juggle/resize-observer/-/resize-observer-3.4.0.tgz#08d6c5e20cf7e4cc02fd181c4b0c225cd31dbb60"
+  integrity sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -633,6 +663,25 @@
   version "1.2.0"
   resolved "https://registry.npmjs.org/@ungap/structured-clone/-/structured-clone-1.2.0.tgz"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
+
+"@vexip-ui/hooks@^2.4.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@vexip-ui/hooks/-/hooks-2.5.0.tgz#fa17d83c8f8b71871df1d22ad17db88d7bbe5300"
+  integrity sha512-T3ikfvkXkm6Et6tnh872GcdMpdEMKgZ9m4sggrddVwW1AvzZTGCY00pW5J64VfAW2Ite8AnSunCrqO1OpiempA==
+  dependencies:
+    "@floating-ui/dom" "^1.5.3"
+    "@juggle/resize-observer" "^3.4.0"
+    "@vexip-ui/utils" "2.15.0"
+
+"@vexip-ui/utils@2.15.0":
+  version "2.15.0"
+  resolved "https://registry.yarnpkg.com/@vexip-ui/utils/-/utils-2.15.0.tgz#8080e6de96dc0d14aa313bd53b522321eaf94083"
+  integrity sha512-8YPWShNmlAs9PAhKfUbixinpYR37WfwarJyZFS2h+zTSRqGIEmIBCikrdnA3m0Oh8U4r5G0D6v5P26mXlZnIbw==
+
+"@vexip-ui/utils@^2.13.0", "@vexip-ui/utils@^2.16.1":
+  version "2.16.1"
+  resolved "https://registry.yarnpkg.com/@vexip-ui/utils/-/utils-2.16.1.tgz#a367e2607fc8872d39592089ccbe0adfcbbf5e95"
+  integrity sha512-P0xHHu7j1fXS+DLkVp6ipJNAM2QonymVsBUQai1Ym7/JPyZgHMeEOCMzAfJWwv/qLDfRk5XXJXDjRQDz/qlF7A==
 
 "@vitejs/plugin-vue@^5.0.5":
   version "5.1.4"
@@ -1530,6 +1579,15 @@ graphemer@^1.4.0:
   resolved "https://registry.npmjs.org/graphemer/-/graphemer-1.4.0.tgz"
   integrity sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==
 
+grid-layout-plus@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/grid-layout-plus/-/grid-layout-plus-1.0.5.tgz#2d4fc4a629fd98c85cf5fc93b09efc9e511f6c30"
+  integrity sha512-5EUNN4soj4k/yiFw3Y6u9PLRyOrDu/uBUaVLZ9MsoPWicSLRIin+EBnF8SUKnA9mjIhrDdYRG7sJSbdaXCHdPg==
+  dependencies:
+    "@vexip-ui/hooks" "^2.4.0"
+    "@vexip-ui/utils" "^2.13.0"
+    interactjs "^1.10.26"
+
 has-flag@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/has-flag/-/has-flag-3.0.0.tgz"
@@ -1592,6 +1650,13 @@ inherits@2:
   version "2.0.4"
   resolved "https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
+
+interactjs@^1.10.26:
+  version "1.10.27"
+  resolved "https://registry.yarnpkg.com/interactjs/-/interactjs-1.10.27.tgz#16499aba4987a5ccfdaddca7d1ba7bb1118e14d0"
+  integrity sha512-y/8RcCftGAF24gSp76X2JS3XpHiUvDQyhF8i7ujemBz77hwiHDuJzftHx7thY8cxGogwGiPJ+o97kWB6eAXnsA==
+  dependencies:
+    "@interactjs/types" "1.10.27"
 
 is-binary-path@~2.1.0:
   version "2.1.0"
